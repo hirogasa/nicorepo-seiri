@@ -17,7 +17,7 @@ function getMyFav(page) {
 			'accept-language': 'ja, ja-JP'
 		}
 	}).done(function(html) {
-		if (html.indexOf('<title>ニコニコ動画　ログインフォーム</title>') == -1) {
+		if (html.indexOf('login_form.css') == -1) {
 			$("table").show();
 			$("#start").remove();
 			$("#login_check").remove();
